@@ -92,26 +92,6 @@ public class Carte {
         referenti.add(ref);
     }
 
-    public boolean cautaDupaCuvinteCheie(List<String> cuvinte) {
-        for (String c : cuvinteCheie) {
-            for (String cuv : cuvinte) {
-                if (c.equals(cuv)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    public boolean cautaDupaAutor(String autor) {
-        for (String a : referenti) {
-            if (a.contains(autor)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     @Override
     public String toString() {
         String ref = "";

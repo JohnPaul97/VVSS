@@ -6,7 +6,7 @@ public class CarteValidator {
 
     private static final String TITLE_REGEX = "[a-zA-Z0-9]+";
     private static final String STRING_REGEX = "[a-zA-Z]+";
-    private static final String NUMBER_REGEX = "0-9|1[0-9]+";
+    private static final String NUMBER_REGEX = "0-9|[1-9][0-9]+";
 
     public static void validateCarte(Carte c) throws Exception {
         if (c.getCuvinteCheie() == null) {
