@@ -10,6 +10,7 @@ public class Carte {
     private List<String> referenti;
     private int anAparitie;
     private List<String> cuvinteCheie;
+    private String editura;
 
     public String getEditura() {
         return editura;
@@ -18,8 +19,6 @@ public class Carte {
     public void setEditura(String editura) {
         this.editura = editura;
     }
-
-    private String editura;
 
     public Carte() {
         titlu = "";
