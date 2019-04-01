@@ -1,0 +1,10 @@
+biblioteca/model/Carte.class
+biblioteca/repository/repo/CartiRepoFile$1.class
+biblioteca/repository/repo/CartiRepoFile.class
+biblioteca/repository/repoInterfaces/CartiRepoInterface.class
+biblioteca/repository/repoMock/CartiRepoMock$1.class
+biblioteca/control/BibliotecaCtrl.class
+biblioteca/util/CarteValidator.class
+biblioteca/view/Consola.class
+biblioteca/begin/Start.class
+biblioteca/repository/repoMock/CartiRepoMock.class

@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: biblioteca.control.BibliotecaCtrlTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.031 s <<< FAILURE! - in biblioteca.control.BibliotecaCtrlTest
+givenYear2070_whenAddingCarte_carteIsAdded(biblioteca.control.BibliotecaCtrlTest)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1997> but was:<2070>
+	at biblioteca.control.BibliotecaCtrlTest.assertBooksEquals(BibliotecaCtrlTest.java:102)
+	at biblioteca.control.BibliotecaCtrlTest.givenYear2070_whenAddingCarte_carteIsAdded(BibliotecaCtrlTest.java:89)
+

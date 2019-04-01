@@ -1,0 +1,8 @@
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/begin/Start.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/repository/repo/CartiRepoFile.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/repository/repoInterfaces/CartiRepoInterface.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/util/CarteValidator.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/repository/repoMock/CartiRepoMock.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/control/BibliotecaCtrl.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/model/Carte.java
+/home/johnpaul/an3/vvss/repo/VVSS/Labs/Lab01/src/main/java/biblioteca/view/Consola.java

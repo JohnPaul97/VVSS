@@ -4,9 +4,9 @@ import biblioteca.model.Carte;
 
 public class CarteValidator {
 
-    private static final String TITLE_REGEX = "[a-zA-Z0-9]+";
+    private static final String TITLE_REGEX = "[a-zA-Z0-9]{1,255}";
     private static final String STRING_REGEX = "[a-zA-Z]+";
-    private static final String NUMBER_REGEX = "0-9|[1-9][0-9]+";
+    private static final String NUMBER_REGEX = "[0-9]|[1-9][0-9]+";
 
     public static void validateCarte(Carte c) throws Exception {
         if (c.getCuvinteCheie() == null) {
@@ -17,6 +17,10 @@ public class CarteValidator {
         }
         if (!isValidTitle(c.getTitlu())) {
             throw new Exception("Titlu invalid!");
+        }
+        if (c.getAnAparitie() < 0 || c.getAnAparitie() > 2071)
+        {
+            throw new Exception("An aparitie trebuie sa fie in intervalul [0,2071]");
         }
         for (String s : c.getReferenti()) {
             if (!isOKString(s)) {
