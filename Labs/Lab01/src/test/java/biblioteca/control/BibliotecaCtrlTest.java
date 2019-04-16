@@ -2,10 +2,13 @@ package biblioteca.control;
 
 import biblioteca.model.Carte;
 import biblioteca.repository.repo.CartiRepoFile;
+import biblioteca.repository.repoMock.CartiRepoMock;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -27,6 +30,13 @@ public class BibliotecaCtrlTest {
         carte.setReferenti(Collections.singletonList("Autor"));
         carte.setEditura("Humanitas");
         carte.setCuvinteCheie(Collections.singletonList("cuvant cheie"));
+
+        bibliotecaCtrl = new BibliotecaCtrl(new CartiRepoMock());
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        bibliotecaCtrl.stergeCarte(carte);
     }
 
     @Test
@@ -111,6 +121,9 @@ public class BibliotecaCtrlTest {
         carte.setAnAparitie(2072);
         bibliotecaCtrl.adaugaCarte(carte);
     }
+
+
+
 
     public void assertBooksEquals(Carte b1, Carte b2) {
         assertEquals(b1.getTitlu(), b2.getTitlu());

@@ -85,7 +85,6 @@ public class CartiRepoFile implements CartiRepoInterface {
 
     @Override
     public void stergeCarte(Carte c) {
-        // TODO Auto-generated method stub
 
     }
 
